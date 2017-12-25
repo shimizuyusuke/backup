@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package moji;
+
+/**
+ * @author internousdev
+ *
+ */
+public class moji {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+		BufferedReader br=new BufferedReader(new InputStreamRreader(System.in));
+		System.out.println("入力してください");
+		String t=br.readeLine();
+		System.out.println(t);
+		
+
+	}
+
+}
