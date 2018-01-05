@@ -1,0 +1,21 @@
+/**
+ *
+ */
+
+/**
+ * @author internousdev
+ *
+ */
+
+	import java.sql.SQLExeption;
+	import com.mysql.jdbc.Connection;
+
+	/**
+	 * <p>MySQLに接続する為のユーティリティクラスです。<br>
+	 * ルートアカウントにてDBに接続されます。</p>
+	 */
+
+public class DBConnector {
+
+
+}
