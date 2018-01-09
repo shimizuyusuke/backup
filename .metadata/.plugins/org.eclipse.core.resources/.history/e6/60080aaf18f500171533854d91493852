@@ -45,15 +45,6 @@ public class Test {
 		System.out.println(yusuke.phonenumber);
 		System.out.println(yusuke.address);
 
-		Robot aibo=new Robot();
-		aibo.name="aibo";
-		System.out.println(aibo.name);
-		aibo.talk();
-		aibo.walk();
-		aibo.run();
-
-
-
 
 	}
 

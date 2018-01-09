@@ -47,7 +47,6 @@ public class Test {
 
 		Robot aibo=new Robot();
 		aibo.name="aibo";
-		System.out.println(aibo.name);
 		aibo.talk();
 		aibo.walk();
 		aibo.run();

@@ -11,9 +11,6 @@ public class Test {
 		System.out.println(taro.age);
 		System.out.println(taro.phonenumber);
 		System.out.println(taro.address);
-		taro.talk();
-		taro.walk();
-		taro.run();
 
 		Person jiro=new Person();
 		jiro.name="木村次郎";
@@ -38,22 +35,8 @@ public class Test {
 		Person yusuke=new Person();
 		yusuke.name="清水佑介";
 		yusuke.age=28;
-		yusuke.phonenumber="080-4444-4444";
-		yusuke.address="東京";
 		System.out.println(yusuke.name);
 		System.out.println(yusuke.age);
-		System.out.println(yusuke.phonenumber);
-		System.out.println(yusuke.address);
-
-		Robot aibo=new Robot();
-		aibo.name="aibo";
-		System.out.println(aibo.name);
-		aibo.talk();
-		aibo.walk();
-		aibo.run();
-
-
-
 
 	}
 
