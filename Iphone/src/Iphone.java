@@ -1,6 +1,7 @@
 
 public class Iphone {
-	public static void main(String[] args){
+
+	public static void main(String[] args) {
 		SmartPhone iphone=new SmartPhone();
 		iphone.play();
 		iphone.stop();
@@ -10,6 +11,9 @@ public class Iphone {
 		iphone.mail();
 		iphone.photo();
 		iphone.internet();
+
+
+
 
 	}
 

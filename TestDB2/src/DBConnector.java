@@ -6,48 +6,47 @@
  * @author internousdev
  *
  */
-
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import com.mysql.jdbc.Connection;
 
 /**
-	 * <p>MySQLに接続する為のユーティリティクラスです。<br>
-	 * ルートアカウントにてDBに接続されます。</p>
-	 */
+ * <p>MySQLに接続するためのユーティリティクラスです。<br>
+ * ルートアカウントにてDB接続されます。
+ */
+
 
 public class DBConnector {
 	/**
-	 * JDBC ドライバー名
+	 * jdbc ドライバー名
 	 */
 	private static String driverName="com.mysql.jdbc.Driver";
 	/**
-	 * データベースの接続　URL
+	 * データベース接続URL
 	 */
-	private static String url=
-"jdbc:mysql://localhost/testdb?autoReconnect=true&useSSL=false";
+	private static String url="jdbc:mysql://localhost/testdb?autoReconnect=true&useSSL=false";
 
 	/**
-	 * データベースの接続ユーザ名
+	 * データベース接続ユーザ名
 	 */
 	private static String user="root";
 	/**
-	 * データベースの接続パスワード
+	 * データベース接続パスワード
 	 */
 	private static String password="mysql";
+
 
 	public Connection getConnection(){
 		Connection con=null;
 		try{
-		Class.forName(driverName);
-		con=(Connection) DriverManager.getConnection(url,user,password);
-		} catch(ClassNotFoundException e){
-		e.printStackTrace();
-		} catch(SQLException e){
-		e.printStackTrace();
-		}
+			Class.forName(driverName);
+			con=(Connection) DriverManager.getConnection(url,user,password);
+			} catch(ClassNotFoundException e){
+				e.printStackTrace();
+			} catch(SQLException e){
+				e.printStackTrace();
+			}
 		return con;
 	}
-
 }
