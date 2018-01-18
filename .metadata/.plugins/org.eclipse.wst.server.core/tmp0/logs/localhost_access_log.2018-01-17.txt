@@ -60,3 +60,9 @@
 0:0:0:0:0:0:0:1 - - [17/Jan/2018:17:06:34 +0900] "GET /HelloServlet2/HelloServlet/HelloServlet HTTP/1.1" 404 1097
 127.0.0.1 - - [17/Jan/2018:17:06:46 +0900] "GET / HTTP/1.1" 404 1019
 0:0:0:0:0:0:0:1 - - [17/Jan/2018:17:06:47 +0900] "GET /HelloServlet2/ HTTP/1.1" 200 210
+127.0.0.1 - - [17/Jan/2018:17:46:35 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [17/Jan/2018:17:46:37 +0900] "GET /HelloServlet2/ HTTP/1.1" 200 293
+0:0:0:0:0:0:0:1 - - [17/Jan/2018:17:46:39 +0900] "GET /HelloServlet2/welcome.jsp HTTP/1.1" 200 347
+0:0:0:0:0:0:0:1 - - [17/Jan/2018:17:46:55 +0900] "POST /HelloServlet2/WelcomeServlet HTTP/1.1" 200 76
+0:0:0:0:0:0:0:1 - - [17/Jan/2018:17:47:03 +0900] "POST /HelloServlet2/WelcomeServlet HTTP/1.1" 200 69
+0:0:0:0:0:0:0:1 - - [17/Jan/2018:17:51:29 +0900] "GET /HelloServlet2/welcome.jsp HTTP/1.1" 200 347
