@@ -4,14 +4,14 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import com.internousdev.template.util.DBConnector;
+import com.internousdev.template.util.DateUtil;
 
-import freemarker.template.utility.DateUtil;
 
 
 public class BuyItemCompleteDAO {
 	private DBConnector dbConnector=new DBConnector();
 	private Connection connection=dbConnector.getConnection();
-	private dateUtil dateUtil=new DateUtil();
+	private DateUtil dateUtil=new DateUtil();
 
 	private String sql="INSERT INTO user_buy_item_transaction (item_transaction_id,"
 			+ "total_price,total_count,user_master_id,pay,insert_date)VALUES(?,?,?,?,?,?)";

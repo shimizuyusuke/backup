@@ -47,8 +47,7 @@ table{
 #main{
       width:100%;
       height:500px;
-      background-color:black;
-      clear:both;
+      text-align:center;
       }
 
 #footer{
@@ -76,15 +75,17 @@ table{
                    <table>
                          <tr>
                             <td>商品名</td>
-                            <td><s:property value="session.buyitem_name" /></td>
+                            <td><s:property value="session.buyItem_name" /></td>
                          </tr>
+
                          <tr>
                             <td>値段</td>
                             <td>
-                               <s:property value="session.buyitem_price" />
+                               <s:property value="session.buyItem_price" />
                                <span>円</span>
                             </td>
                          </tr>
+
                          <tr>
                             <td>購入個数</td>
                             <td>
@@ -92,17 +93,27 @@ table{
                                <span>個</span>
                             </td>
                          </tr>
+
                          <tr>
                             <td>支払い方法</td>
                             <td><s:property value="session.pay" /></td>
                          </tr>
                          <tr>
-                            <td><s:submit value="完了" /></td>
+                             <td><input type="button" value="戻る"
+								  onclick="submitAction('HomeAction')" /></td>
+							 <td><s:submit type="button" value="完了"
+								  onclick="submitAction('BuyItemConfirmAction')" /></td>
                          </tr>
                          </table>
                          </s:form>
-              </div>
-              </div>
+
+              <div>
+				<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
+				<p>マイぺージは<a href='<s:url action="MyPageAction" />'>こちら</a></p>
+				</div>
+				</div>
+				</div>
+
               <div id="footer">
                   <div id="pr">
                   </div>

@@ -1,6 +1,8 @@
 package com.internousdev.template.action;
 import java.util.Map;
+
 import org.apache.struts2.interceptor.SessionAware;
+
 import com.internousdev.template.dao.BuyItemDAO;
 import com.internousdev.template.dao.LoginDAO;
 import com.internousdev.template.dto.BuyItemDTO;
@@ -17,21 +19,6 @@ public class LoginAction extends ActionSupport implements SessionAware {
 	private LoginDTO loginDTO=new LoginDTO();
 	private BuyItemDAO buyItemDAO=new BuyItemDAO();
 
-	public String getLoginUserId(){
-		return loginUserId;
-	}
-	public void setLoginUserId(String loginUserId){
-		this.loginUserId=loginUserId;
-	}
-	public String getLoginPassword(){
-		return loginPassword;
-	}
-	public void setLoginPassword(String loginPassword){
-		this.loginPassword=loginPassword;
-	}
-	@Override
-	public void setSession(Map<String,Object>session){
-		this.session=session;
 	public String execute(){
 		result=ERROR;
 		loginDTO=loginDAO.getLoginUserInfo(loginUserId,loginPassword);
@@ -49,6 +36,23 @@ public class LoginAction extends ActionSupport implements SessionAware {
 		}
 		return result;
 	}
+
+	public String getLoginUserId(){
+		return loginUserId;
+	}
+	public void setLoginUserId(String loginUserId){
+		this.loginUserId=loginUserId;
+	}
+	public String getLoginPassword(){
+		return loginPassword;
+	}
+	public void setLoginPassword(String loginPassword){
+		this.loginPassword=loginPassword;
+	}
+	@Override
+	public void setSession(Map<String,Object>session){
+		this.session=session;
+
 	}
 
 }

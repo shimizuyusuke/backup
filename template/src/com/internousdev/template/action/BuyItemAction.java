@@ -15,7 +15,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 	public String execute(){
 		result=SUCCESS;
 
-		session.put("stock","stock");
+		session.put("stock",stock);
 		int intStock=Integer.parseInt(session.get("stock").toString());
 		int intPrice=Integer.parseInt(session.get("buyItem_price").toString());
 		session.put("buyItem_price",intStock*intPrice);
@@ -30,7 +30,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		}
 		return result;
 	}
-	public int getString(){
+	public int getStock(){
 		return stock;
 	}
 	public void setStock(int stock){

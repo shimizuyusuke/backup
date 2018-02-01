@@ -44,11 +44,17 @@ table{
         }
 
 #main{
-      width:100px;
-      height:80px;
-      background-color:black;
-      clear:both;
+      width:100%;
+      height:500px;
+      text-align: center;
       }
+
+#footer {
+         width: 100%;
+		 height: 80px;
+		 background-color: black;
+		 clear:both;
+		}
       </style>
 
 </head>
@@ -80,6 +86,7 @@ table{
                                  <s:property value="session.buyItem_price" />
                                  <span>円</span>
                              </td>
+                             </tr>
                            <tr>
                               <td>
                                   <span>在庫</span>
@@ -117,7 +124,9 @@ table{
 				        </div>
 				        </div>
 				        </div>
+				        <div id="footer">
 				        <div id="pr">
+				        </div>
 				        </div>
 </body>
 </html>

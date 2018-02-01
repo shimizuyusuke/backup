@@ -40,16 +40,15 @@ table{
      }
 
 #header{
-        width:100px;
+        width:100%;
         height:80px;
         background-color:black;
         }
 
 #main{
-      width:100px;
-      height:80px;
-      background-color:black;
-      clear:both;
+      width:100%;
+      height:500px;
+      text-align:center;
       }
 
 #footer{
@@ -72,7 +71,7 @@ table{
                     </div>
 
       <div>
-           <s:if test="errorMassage !=">
+           <s:if test="errorMassage !=''">
                 <s:property value="errorMassage" escape="false" />
                 </s:if>
                 <table>
@@ -83,6 +82,14 @@ table{
                       </td>
                       <td>
                           <input type="text" name="loginUserId" value="" />
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>
+                         <label>ログインPASS：</label>
+                      </td>
+                      <td>
+                         <input type="text" name="loginPassword" value="" />
                       </td>
                    </tr>
                    <tr>
