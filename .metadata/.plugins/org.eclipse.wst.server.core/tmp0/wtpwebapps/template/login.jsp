@@ -39,10 +39,16 @@ table{
         }
 
 #header{
-        width:100px;
+        width:100%;
         height:80px;
         background-color:black;
         }
+
+#main{
+      width:100%;
+      height:500px;
+      text-align:center;
+      }
 
 #footer{
         width:100%;
@@ -65,7 +71,7 @@ table{
 
         <div>
              <h3>商品を購入する際にはログインをお願いします。</h3>
-             <s:form action="loginAction">
+             <s:form action="LoginAction">
                      <s:textfield name="loginUserId" />
                      <s:password name="loginPassword" />
                      <s:submit value="ログイン" />
@@ -77,12 +83,13 @@ table{
                 </span>
                 </div>
                 </div>
+                </div>
 
                 <div id="footer">
                       <div id="pr">
                       </div>
                       </div>
-                      </div>
+
 
 </body>
 </html>
