@@ -72,67 +72,73 @@ table{
 			<div id="pr">
 			</div>
 		</div>
-		<div id="main">
-			<div id="top">
-				<p>BuyItem</p>
-			</div>
+
+			<div id="header">
+	 	<div id="pr">
+		</div>
+	</div>
+	<div id="main">
+		<div id="top">
+			<p>BuyItem</p>
+		</div>
+		<div>
+		<s:form action="BuyItemConfirmAction">
+			<table>
+				<tr>
+					<td>
+						<span>商品名</span>
+					</td>
+					<td>
+						<s:property value="session.buyItem_name" /><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>値段</span>
+					</td>
+					<td>
+						<s:property value="session.buyItem_price" /><span>円</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>購入個数</span>
+					</td>
+					<td>
+						<select name="count">
+							<option value="1" selected="selected">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>支払い方法</span>
+					</td>
+					<td>
+						<input type="radio" name="pay" value="1" checked="checked">現金払い
+						<input type="radio" name="pay" value="2">クレジットカード
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<s:submit value="購入"/>
+					</td>
+				</tr>
+			</table>
+		</s:form>
 			<div>
-				<s:form>
-					<tr>
-						<td>商品名</td>
-						<td>
-							<s:property value="session.buyItem_name"/>
-						</td>
-					</tr>
-					<tr>
-						<td>値段</td>
-						<td>
-							<s:property value="session.total_price" />
-							<span>円</span>
-						</td>
-					</tr>
-					<tr>
-						<td>購入個数</td>
-						<td>
-							<s:property value="session.count" />
-							<span>個</span>
-						</td>
-					</tr>
-					<tr>
-						<td>支払い方法</td>
-						<td>
-							<s:property value="session.pay" />
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<br>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="button" value="戻る"
-								onclick="submitAction('HomeAction')"/>
-						</td>
-						<td>
-							<input type="button" value="完了"
-								onclick="submitAction('BuyItemConfirmAction')"/>
-						</td>
-					</tr>
-				</s:form>
-
-				<div>
-				<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
-				<p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
-				</div>
+				<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
+				<p>マイぺージは<a href='<s:url action="MyPageAction" />'>こちら</a></p>
 			</div>
 		</div>
-
-		<div id="footer">
-			<div id="pr">
-			</div>
+	</div>
+	<div id="footer">
+	 	<div id="pr">
 		</div>
-
-
+	</div>
 </body>
 </html>
